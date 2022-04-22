@@ -59,15 +59,21 @@
 .location{
     padding-bottom: 5px ;
     font-size: 25px;
-
 }
 
 .weather-info{
     position: absolute;
     top: 45%;
-    /* text-align: center; */
-    width: 100%;
     font-size: 45px;
+    width: 100%;
+    /* background:rgb(255, 255, 255, 0.7); */
+    /* right: 38%;
+    height: 100%;
+    max-width: 250px; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: centers; */
+    /* max-height: 100px;   */
 }
 
 

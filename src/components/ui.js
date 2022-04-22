@@ -67,7 +67,7 @@ class Ui extends Component{
          const {city, country, temp} = this.state
         return(
             <div className="container">
-                <div className= {temp > 15 ? "container_warm" : "container_cold"}></div>
+                <div className= {temp > 24 ? "container_warm" : "container_cold"}></div>
 
                 <div className = "searchbox">
                     <input type="text" placeholder="Search..." className="search-el" onKeyDown={this.KeyTracker}/>
@@ -77,7 +77,7 @@ class Ui extends Component{
                 <div className="info">
                     <div className="location">
                         {/* {city}, {country} */}
-                        {country != '' ? `${city}, ${country}` : ""}
+                        {country !== '' ? `${city}, ${country}` : ""}
                     </div>
 
                     <div className="date">{dateBuilder(new Date())}</div>
@@ -86,7 +86,7 @@ class Ui extends Component{
                 <div className="weather-info">
                     <div className="weather">
                         {/* {temp} °C  */}
-                        {temp != '' ? `${temp} °C` : ""}
+                        {temp !== '' ? `${temp} °C` : ""}
                     </div>
                 </div>
             </div>
